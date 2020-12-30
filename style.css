@@ -1,0 +1,88 @@
+/** @format */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: "Raleway", sans-serif;
+}
+
+.app {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+header .logo {
+	font-size: 40px;
+	margin: 50px 0px 25px 0px;
+}
+
+header p {
+	font-size: 20px;
+}
+
+.pads {
+	height: 150px;
+	width: 100%;
+	background-color: lightblue;
+	display: flex;
+}
+
+.pads > div {
+	height: 100%;
+	width: 120px;
+	flex: 1;
+}
+
+.pad1 {
+	background-color: lightcoral;
+}
+.pad2 {
+	background-color: rgb(128, 126, 36);
+}
+.pad3 {
+	background-color: rgb(98, 99, 185);
+}
+.pad4 {
+	background-color: rgb(240, 214, 128);
+}
+.pad5 {
+	background-color: rgb(167, 36, 160);
+}
+.pad6 {
+	background-color: rgb(87, 198, 241);
+}
+
+.ball {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	position: absolute;
+}
+
+@keyframes jump {
+	0% {
+		bottom: 10%;
+		left: 20%;
+	}
+	50% {
+		bottom: 50%;
+		left: 50%;
+	}
+	100% {
+		bottom: 10%;
+		left: 80%;
+	}
+}
